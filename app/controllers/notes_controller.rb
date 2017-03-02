@@ -5,13 +5,15 @@ class NotesController < ApplicationController
     render json: @notes
   end
 
+  # def create
+  #   @note = Note.new(note_params)
 
 
 
 # private
 #
 #   def note_params
-#     params.require(:note).permit(:title, :body, :created_at, :updated_at, :tags, :user)
+#     params.require(:note).permit(:title, :body, :tags)
 #   end
 
 end
