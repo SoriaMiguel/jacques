@@ -1,8 +1,12 @@
 class ApplicationController < ActionController::API
 
-  # private
-  # chris's code from class
-  # # def current_user
-  # #   @current_user || User.find_by(api_token)
-  # # end
+  private
+
+  def current_user
+    @current_user || User.find_by(api_token: params[:api_token])
+  end
+
+  def require_user
+    
+  end
 end
