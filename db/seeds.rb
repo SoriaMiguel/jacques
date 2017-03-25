@@ -11,3 +11,5 @@ def setup
     FactoryGirl.create(:note_with_tags)
   end
 end
+
+setup
