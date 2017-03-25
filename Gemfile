@@ -21,6 +21,7 @@ gem 'puma'
 gem 'rack-cors'
 
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'factory_girl_rails', '~> 4.0'
 
 
 group :development, :test do
