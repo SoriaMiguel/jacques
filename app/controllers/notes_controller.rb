@@ -26,7 +26,7 @@ class NotesController < ApplicationController
 private
 
   def note_params
-    np = params.permit(:body, :title, :tags, :user)
+    np = params.permit(:body, :title, :tags)
     tags = []
     np[:tags].split(",").map(&:strip).each do |t|
       tags << Tag.find_or_create_by!(name: t)
